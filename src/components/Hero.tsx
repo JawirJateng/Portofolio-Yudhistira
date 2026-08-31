@@ -66,7 +66,7 @@ export function Hero() {
           >
             <div className="relative">
               <motion.div
-                className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-emerald-500 p-1 animate-float"
+                className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full bg-[var(--accent)] p-1 animate-float"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -78,16 +78,16 @@ export function Hero() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <defs>
-                      <linearGradient
-                        id="avatarGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                      >
-                        <stop offset="0%" stopColor="var(--accent)" />
-                        <stop offset="100%" stopColor="#10b981" />
-                      </linearGradient>
+                <linearGradient
+                  id="avatarGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stopColor="var(--accent)" />
+                  <stop offset="100%" stopColor="var(--accent)" />
+                </linearGradient>
                     </defs>
                     <circle
                       cx="100"
@@ -105,7 +105,7 @@ export function Hero() {
                   </svg>
                 </div>
               </motion.div>
-              <div className="absolute -inset-4 bg-gradient-to-br from-indigo-500/20 via-purple-500/20 to-emerald-500/20 rounded-full blur-2xl -z-10" />
+              <div className="absolute -inset-4 bg-[var(--accent)]/20 rounded-full blur-2xl -z-10" />
             </div>
           </motion.div>
         </div>

@@ -6,22 +6,22 @@ import { projects } from "@/data/portfolio";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const accentMap = {
-  indigo: {
-    bg: "from-indigo-500/20 to-indigo-500/5",
-    text: "text-indigo-500",
-    border: "hover:border-indigo-500/50",
+  neutral: { 
+    bg: "from-neutral-500/20 to-neutral-500/5",
+    text: "text-neutral-900 dark:text-neutral-100",
+    border: "hover:border-neutral-500/50",
   },
-  purple: {
-    bg: "from-purple-500/20 to-purple-500/5",
-    text: "text-purple-500",
-    border: "hover:border-purple-500/50",
+  slate: { 
+    bg: "from-slate-500/20 to-slate-500/5",
+    text: "text-slate-900 dark:text-slate-100",
+    border: "hover:border-slate-500/50",
   },
-  emerald: {
-    bg: "from-emerald-500/20 to-emerald-500/5",
-    text: "text-emerald-500",
-    border: "hover:border-emerald-500/50",
+  zinc: { 
+    bg: "from-zinc-500/20 to-zinc-500/5",
+    text: "text-zinc-900 dark:text-zinc-100",
+    border: "hover:border-zinc-500/50",
   },
-} as const;
+};
 
 function ProjectCard({
   project,
@@ -31,8 +31,8 @@ function ProjectCard({
   index: number;
 }) {
   const { t } = useLanguage();
-  const accent = accentMap[project.accent];
-  const translated = t.projects[project.id] || { name: project.name, desc: project.description };
+  const accent = accentMap[project.accent as keyof typeof accentMap];
+  const translated = t.projects[project.id as keyof typeof t.projects];
 
   return (
     <motion.article
@@ -86,6 +86,7 @@ function ProjectCard({
               GitHub
             </a>
           )}
+
           {project.demo && (
             <a
               href={project.demo}
@@ -106,10 +107,7 @@ function ProjectCard({
 export function Projects() {
   const { t } = useLanguage();
   return (
-    <section
-      id="projects"
-      className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[var(--muted)]/30"
-    >
+    <section id="projects" className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[var(--muted)]/30">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"

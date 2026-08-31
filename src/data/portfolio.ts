@@ -7,7 +7,7 @@ export const siteConfig = {
     "Membuat website modern dengan fokus pada performa dan pengalaman pengguna.",
   description:
     "Hallo, Saya seorang Full Stack Developer yang mulai mengenal dunia coding sejak kelas 10 SMK. Berawal dari rasa penasaran terhadap bagaimana sebuah aplikasi dan website dibuat, saya terus belajar dan mengembangkan kemampuan dalam membangun aplikasi dari sisi frontend hingga backend. Saya menikmati proses mengubah ide menjadi sebuah produk digital yang interaktif, fungsional, dan memiliki pengalaman pengguna yang baik.",
-  email: "hello@wira.dev",
+  email: "wirayudhistira18@gmail.com",
   phone: "+62 812-3456-7890",
   location: "Indonesia",
   cvUrl: "/cv-wira.pdf",
@@ -149,7 +149,7 @@ export type Project = {
   tech: string[];
   github?: string;
   demo?: string;
-  accent: "indigo" | "purple" | "emerald";
+  accent: "neutral" | "slate" | "zinc";
 };
 
 export const projects: Project[] = [
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/JawirJateng",
     demo: "https://vercel.com/",
-    accent: "indigo",
+    accent: "neutral",
   },
   {
     id: "nexcommerce",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Laravel", "PostgreSQL", "Stripe"],
     github: "https://github.com/JawirJateng",
     demo: "https://vercel.com/",
-    accent: "purple",
+    accent: "slate",
   },
   {
     id: "devblog",
@@ -180,7 +180,7 @@ export const projects: Project[] = [
       "Blog untuk developer dengan Markdown support, code highlighting, dan sistem tag yang fleksibel.",
     tech: ["Next.js", "MDX", "Tailwind CSS", "Prisma"],
     github: "https://github.com/JawirJateng",
-    accent: "emerald",
+    accent: "zinc",
   },
   {
     id: "fittrack",
@@ -190,7 +190,7 @@ export const projects: Project[] = [
     tech: ["React", "D3.js", "Node.js", "MongoDB"],
     github: "https://github.com/JawirJateng",
     demo: "https://vercel.com/",
-    accent: "indigo",
+    accent: "neutral",
   },
   {
     id: "aichat",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "OpenAI", "Tailwind CSS"],
     github: "https://github.com/JawirJateng",
     demo: "https://vercel.com/",
-    accent: "purple",
+    accent: "slate",
   },
   {
     id: "cloudnotes",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
       "Aplikasi catatan berbasis cloud dengan sinkronisasi real-time, rich-text editor, dan sharing publik.",
     tech: ["React", "Firebase", "Tailwind CSS", "TipTap"],
     github: "https://github.com/JawirJateng",
-    accent: "emerald",
+    accent: "zinc",
   },
 ];
 

@@ -25,9 +25,9 @@
   --card: #ffffff;
   --card-foreground: #0a0a0a;
   --border: #e4e4e7;
-  --accent: #6366f1;
-  --accent-foreground: #ffffff;
-  --ring: #a5b4fc;
+--accent: #000000;
+--accent-foreground: #ffffff;
+--ring: #71717a;
 }
 
 .dark {
@@ -38,9 +38,9 @@
   --card: #0f0f10;
   --card-foreground: #ededed;
   --border: #27272a;
-  --accent: #818cf8;
-  --accent-foreground: #0a0a0a;
-  --ring: #6366f1;
+--accent: #ffffff;
+--accent-foreground: #000000;
+--ring: #a1a1aa;
 }
 
 * {
@@ -128,5 +128,5 @@ body {
 }
 
 .gradient-text {
-  color: #6366f1;
+  color: var(--accent);
 }
